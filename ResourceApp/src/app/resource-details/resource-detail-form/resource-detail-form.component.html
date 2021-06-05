@@ -1,0 +1,15 @@
+<form #form="ngForm" autocomplete="on" (submit)="onSubmit(form)">
+    <div class="form-group">
+        <label>RESOURCE OWNER ID</label>
+        <input type="text" class="form-control form-control-lg" placeholder="Number: Example 1"
+        name="id" #id="ngModel" [(ngModel)]="service.formData.id">
+    </div>
+    <div class="form-group">
+        <label>RESOURCE OWNER NAME</label>
+        <input type="text" class="form-control form-control-lg" placeholder="Resource name"
+        name="name" #name="ngModel" [(ngModel)]="service.formData.name">
+    </div>
+    <div class="form-group" style="padding-top: 10px;">
+        <button class="btn btn-info btn-lg btn-block" style="width: 635px;" type="submit">SUBMIT</button>
+    </div>
+</form>
